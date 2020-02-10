@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@+id/pincodeFragment">
+
+    <fragment
+        android:id="@+id/pincodeFragment"
+        android:name="com.skcc.wdp.poc.view.fragment.PincodeFragment"
+        android:label="PincodeFragment"
+        tools:layout="@layout/fragment_pincode">
+        <action
+            android:id="@+id/action_pincodeFragment_to_certificationFragment"
+            app:destination="@id/certificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/certificationFragment"
+        android:name="com.skcc.wdp.poc.view.fragment.RnnLoginMain"
+        android:label="fragment_input_rrn"
+        tools:layout="@layout/fragment_input_rrn" />
+</navigation>
